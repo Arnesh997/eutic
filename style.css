@@ -67,13 +67,13 @@ nav {
     .nav-links.active {
         display: flex;
     }
-    .menu-icon {
+    /* .menu-icon {
         display: block;
         margin-left: 80px;
     }
     .menu-icon.active {
         color: rgb(233, 194, 23);
-    }
+    } */
     nav .logo-wrapper {
         /* margin-left: -170px; Adjust the margin as needed */
         align-items: left;
@@ -101,10 +101,10 @@ nav {
     display: flex;
 }
 
+
 /* nav ul li a{
   display: none;
 } */
-
 
 .weutic-container {
     display: flex;
@@ -131,19 +131,20 @@ nav {
     margin-left: 200px;
 }
 
-   /* to split the container into two blocks */
-  .split-container {
+
+/* to split the container into two blocks */
+
+.split-container {
     display: flex;
-  }
-  
-  .weutic-container {
+}
+
+.weutic-container {
     display: flex;
     margin: 30px;
     background-color: antiquewhite;
-  }
+}
 
-
-  .image-section {
+.image-section {
     flex: 1;
 }
 
@@ -969,16 +970,13 @@ td {
     -10px 10px 25px rgb(81,67,21),
     -10px -10px 25px rgb(81,67,21),
     10px -10px 25px rgb(81,67,21); */
-
-
-
-  color: rgb(222, 174, 41);
-	font-weight: normal;
-	font-family: 'Ultra', sans-serif;   
-	font-size: 29px;
-	line-height: 42px;
-	text-transform: uppercase;
-	text-shadow: 0 2px rgb(24, 23, 23), 0 3px rgb(250, 248, 248);
+    color: rgb(222, 174, 41);
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;
+    font-size: 29px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: 0 2px rgb(24, 23, 23), 0 3px rgb(250, 248, 248);
 }
 
 .event-box-title h3 {
