@@ -52,7 +52,7 @@ nav {
 
 /* Media query for screens 768px and below */
 
-@media (max-width: 1091px) {
+@media (max-width: 1080px) {
     .nav-links {
         display: none;
         flex-direction: column;
