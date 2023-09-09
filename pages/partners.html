@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EUTIC</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* partner styling  */
+        
+        .container-partner {
+            margin-bottom: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        .container-partner h1 {
+            margin: 0;
+            padding: 50px 0;
+            /* Adding padding at the top and bottom to give some space */
+            text-align: center;
+            /* Aligning text to the center */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Adding a nice font */
+        }
+        
+        .partner-boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            gap: 20px;
+            grid-gap: 10px;
+            margin-top: -40px;
+            /* Adjusted top margin */
+            margin-bottom: 50px;
+            padding: 50px 100px 50px 100px;
+            /* Adjusted top and bottom padding values */
+        }
+        
+        .partner-box {
+            margin-right: 20px;
+            /* Add horizontal margin between partner boxes */
+            margin-bottom: 20px;
+            /* Add vertical margin between partner boxes */
+        }
+        
+        .partner-box img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+        }
+        /* Responsive styling */
+        
+        @media screen and (max-width: 992px) {
+            .partner-boxes {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 items in a row for tablets */
+                padding: 50px 50px;
+                /* Reduced padding for tablets */
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                /* Hide navigation links on smaller screens. You might want to implement a mobile menu */
+            }
+            .partner-boxes {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 items in a row for smaller screens */
+                padding: 30px 20px;
+                /* Reduced padding for mobile */
+            }
+            /* Adjust logo size or position as needed for mobile screens */
+            .logo-wrapper img {
+                width: 80%;
+                /* Adjust based on preference */
+            }
+            /* Adjustments for the contact section */
+            .contact-section {
+                display: flex;
+                flex-direction: column;
+            }
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .partner-boxes {
+                grid-template-columns: 1fr;
+                /* 1 item in a row for very small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="logo-wrapper">
+                <a class="logo" href="../index.html"><img src="../logo.png" alt="Cufis Logo">
+
+
+                </a>
+
+                <!-- for menu to make site responsive -->
+                <!-- <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
+
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="../index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="committee.html">Committee</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="sectors.html">Sectors</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="weutic.html">WEUTIC</a></li>
+                <li><a href="join_us.html">Join Us</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <section>
+        <div class="container-partner">
+            <h1>OUR PARTNERS</h1>
+        </div>
+
+        <div class="partner-boxes">
+            <div class="partner-box">
+                <img src="../partner_img/blackrock.png" alt="Partner 1">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/bnp.png" alt="Partner 2">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/citi.png" alt="Partner 3">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/dtchebnk.png" alt="Partner 4">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/eastdil.png" alt="Partner 5">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/fini.png" alt="Partner 6">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/goldman.png" alt="Partner 7">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/moneymaze.jpeg" alt="Partner 8">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/morgstan.png" alt="Partner 9">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/pwc.png" alt="Partner 10">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/schroders.png" alt="Partner 11">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/stocktrade.png" alt="Partner 12">
+            </div>
+            <div class="partner-box">
+                <img src="../partner_img/theeconomist.png" alt="Partner 13">
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="footer">
+
+            <div class="row">
+                <img src="../University_of_Edinburgh-Logo.wine.png" alt="blah">
+                <img src="../eutic_logo.png" alt="eutic-logo">
+            </div>
+
+            <div class="row">
+                <a href="https://www.facebook.com/EUTIC/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/eutic23_24/?ref=Laciex"><i class="fa fa-instagram"></i></a>
+                <a href="https://uk.linkedin.com/company/edinburgh-university-trading-and-investment-club"><i class="fa fa-linkedin"></i></a>
+                <!-- <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a> -->
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <!-- <li><a href="#">Join Us</a></li> -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <!-- <li><a href="#">Committee</a></li> -->
+                </ul>
+            </div>
+
+            <!-- <div class="row">
+                EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha 
+                </div> -->
+
+
+
+
+
+        </div>
+
+
+
+
+    </section>
+    <footer>
+        EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha
+    </footer>
+
+    <!-- Other sections/content goes here -->
+
+    <!-- <footer>
+    <div class="container">
+      <p>&copy; 2023 EUTIC. All rights reserved.</p>
+    </div>
+        <a href="https://www.facebook.com/cufis" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com/cufis" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/cufis" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+  </footer>
+
+   -->
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

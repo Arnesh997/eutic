@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join EUTIC</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+        <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
+        
+        footer {
+            flex-shrink: 0;
+        }
+        
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .left-half {
+            width: 50%;
+            background-color: grey;
+            color: white;
+            /* Change this to any color you want for the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            /* Adjust as needed */
+            min-height: 40vh;
+            /* Increased value for vertical height */
+        }
+        
+        .right-half {
+            width: 50%;
+            background-color: #f7f7f7;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        
+        .right-half h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+            padding-top: 50px
+        }
+        
+        .right-half p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        .activities {
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 50px;
+            /* Adjust the padding values as desired */
+            max-width: 800px;
+            /* Adjust the max-width value as desired */
+            padding-top: 50px;
+        }
+        
+        .activities p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            padding-top: 5px;
+        }
+        
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .column {
+            flex: 0 0 calc(33.33% - 20px);
+            /* Adjust the width of the columns as needed */
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .circle-frame {
+            width: 150px;
+            /* Adjust the width and height of the circular frames as desired */
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .circle-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .columns .column {
+                flex: 0 0 calc(100% - 20px);
+                /* full width on smaller screens */
+                margin: 10px 0;
+            }
+        }
+        
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .columns .column {
+                flex: 0 0 calc(50% - 20px);
+                /* 2 cards per row on medium screens */
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <a class="logo" href="../index.html"><img src="../logo.png" alt="eutic Logo">
+
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="../index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="committee.html">Committee</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="sectors.html">Sectors</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="weutic.html">WEUTIC</a></li>
+                <li><a href="join_us.html">Join Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="committee-members">
+            <h2 style="text-align: center; margin-bottom: 40px;">Committee Members</h2>
+
+            <!-- Example Sector 1 -->
+            <h3 style="text-align: left; margin: 20px 0;">Sector/Position 1</h3>
+            <div class="columns">
+                <!-- Member 1 of Sector 1 -->
+                <div class="column" style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                    <div class="circle-frame">
+                        <img src="../path_to_member1_image.jpg" alt="Member 1">
+                    </div>
+                    <h4 style="margin-top: 15px;">Member Name 1</h4>
+                    <p style="font-size: 16px; color: #888;">Role/Title</p>
+                </div>
+                <!-- You can replicate the above structure for more members of this sector -->
+            </div>
+
+            <!-- Example Sector 2 -->
+            <h3 style="text-align: left; margin: 20px 0;">Sector/Position 2</h3>
+            <div class="columns">
+                <!-- Member 1 of Sector 2 -->
+                <div class="column" style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                    <div class="circle-frame">
+                        <img src="../path_to_member2_image.jpg" alt="Member 2">
+                    </div>
+                    <h4 style="margin-top: 15px;">Member Name 2</h4>
+                    <p style="font-size: 16px; color: #888;">Role/Title</p>
+                </div>
+                <!-- You can replicate the above structure for more members of this sector -->
+            </div>
+
+            <!-- Add more sectors and members as needed -->
+
+        </section>
+    </main>
+
+    <section>
+        
+        <div class="footer">
+
+                <div class="row">
+                    <img src = "../University_of_Edinburgh-Logo.wine.png" alt = "blah">
+                    <img src="../eutic_logo.png" alt = "eutic-logo">
+                </div>
+            
+                <div class="row">
+                <a href="https://www.facebook.com/EUTIC/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/eutic23_24/?ref=Laciex"><i class="fa fa-instagram"></i></a>
+                <a href="https://uk.linkedin.com/company/edinburgh-university-trading-and-investment-club"><i class="fa fa-linkedin"></i></a>
+                <!-- <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a> -->
+                </div>
+                
+                <div class="row">
+                <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Committee</a></li>
+                </ul>
+                </div>
+                
+                <!-- <div class="row">
+                EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha 
+                </div> -->
+                
+                
+                
+                
+            
+        </div>
+    
+
+    
+    
+</section>
+<footer>
+    EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha         
+</footer>
+
+</body>
+
+</html>

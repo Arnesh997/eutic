@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join EUTIC</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 200vh;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
+        
+        footer {
+            flex-shrink: 0;
+        }
+        
+        .about-sectors {
+            margin: 0 auto;
+            width: 60%;
+            text-align: left;
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        
+        .about-sectors h1 {
+            color: rgb(222, 174, 41);
+            font-weight: 200;
+            /* Makes the heading lighter. You can adjust this value as per your needs. */
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 30px;
+        }
+        
+        .about-sectors p {
+            color: grey;
+            font-size: 20px;
+            /* Makes the paragraph text grey */
+        }
+        
+        .slideshow-container {
+            width: 100%;
+            height: 700px;
+            /* Adjust this value to get the height you want */
+            overflow: hidden;
+            /* Ensures that the images don't overflow the container */
+        }
+        
+        .mySlides {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* This will cover the entire area of the container, cropping the image if necessary */
+        }
+        
+        .detail-sectors {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .detail-sectors p {
+            font-size: 38px;
+            font-weight: 200;
+            font-family: 'Times New Roman', Times, serif;
+            color: #997714;
+            text-align: center;
+            padding: 40px 0;
+            /* vertical padding only */
+            width: 50%;
+            /* or whatever width you prefer */
+            margin: 0 auto;
+            /* auto margins on left and right will center the paragraph */
+        }
+        
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+            /* adjust as needed */
+            width: 100%;
+            /* adjust as needed */
+            padding: 0 50px;
+            /* adjust as needed */
+        }
+        
+        .sector {
+            padding: 20px;
+            /* optional */
+            text-align: center;
+            /* This will center the text inside each sector */
+            border-radius: 10px;
+            /* optional */
+        }
+        
+        .sector h3 {
+            /* Styles for the sector heading... */
+            text-align: center;
+            color: #997714;
+        }
+        
+        .sector p {
+            /* Styles for the sector description... */
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        }
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <a class="logo" href="../index.html"><img src="../logo.png" alt="eutic Logo">
+
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="../index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="dropdown">
+                    <a href="committee.html">Committee</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="events.html">Events</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="sectors.html">Sectors</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="weutic.html">WEUTIC</a></li>
+                <!-- <li><a href="join_us.html">Join Us</a></li> -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Add your main content here -->
+        <div class="about-sectors">
+            <h1>Sectors</h1>
+            <p>The EUTIC Fund is managed by 9 dedicated sectors, each focusing on a different research area. By joining a sector you can get involved in managing the fund, looking into an industry that you're passionate about.</p>
+            <p> EUTIC provides you with a unique opportunity to learn about investment at no personal risk as well as meeting new people. Drop by one of the weekly sector meetings and join the conversation! </p>
+        </div>
+
+        <!-- ...existing content... -->
+
+        <div class="slideshow-container">
+            <img class="mySlides" src="../truck.png">
+            <img class="mySlides" src="../consum_sec.png">
+            <img class="mySlides" src="../industry_sec.png">
+            <img class="mySlides" src="../health_sec.png">
+            <img class="mySlides" src="../tmt_sec.png">
+            <img class="mySlides" src="../eng_ut.png">
+            <img class="mySlides" src="../fin_sec.png">
+            <img class="mySlides" src="../alt_sec.png">
+            <img class="mySlides" src="../esg_sec.png">
+            <!-- Add as many slides as you like -->
+        </div>
+
+        <div class="detail-sectors">
+            <p>Our members actively participate in the investment of the EUTIC fund by undertaking roles as analysts in a given research sector.</p>
+            <div class="sectors-grid">
+                <!-- First row -->
+                <div class="sector">
+                    <h3>Alternative</h3>
+                    <p style="color: #000000;">Alternative stands apart from the rest of EUTIC’s sectors by investing in any type of financial asset, be they REITs, mutual funds, bonds or ETFs, in any industry. Our focus is to generate the best returns wherever they may come from.</p>
+                </div>
+                <div class="sector">
+                    <h3>Basic Materials</h3>
+                    <p style="color: #000000;">The Basic Materials sector is at the heart of the global economy, encompassing stocks that engage in the discovery, development and processing of raw materials. Our focus is to analyse key political and macroeconomic drivers and predict
+                        how they will impact our industry in order to maximise returns.</p>
+                </div>
+                <div class="sector">
+                    <h3>Consumer</h3>
+                    <p style="color: #000000;">In Consumer we can invest into anything you can buy. We look at consumption patterns and macroeconomic trends that effect companies specializing in consumer goods. These companies have links to retail, technology, industrial production
+                        and other goods an individual can purchase.</p>
+                </div>
+                <div class="sector">
+                    <h3>Energy & Utilities</h3>
+                    <p style="color: #000000;">The Energy & Utilities Sector looks at the key political, economic and financial drivers of one of the biggest, and most dynamic industries in the world.</p>
+                </div>
+                <div class="sector">
+                    <h3>Financial</h3>
+                    <p style="color: #000000;">The Financial Sector is a highly cyclical section of the economy made up of firms that provide financial services to commercial and retail customers. This includes investment banks, commercial banks, hedge funds and insurance companies.</p>
+                </div>
+                <!-- more sector divs... -->
+                <!-- Second row -->
+                <div class="sector">
+                    <h3>Healthcare</h3>
+                    <p style="color: #000000;">The healthcare sector is diverse and evolving, combining innovations at the forefront of TMT, scientific research and consumer industries to improve the lives of everyone, everyday, everywhere.</p>
+                </div>
+                <div class="sector">
+                    <h3>ESG</h3>
+                    <p style="color: #000000;">As the newest EUTIC sector, on top of generating financial returns – we invest in companies that also aim to generate a positive impact on the society and the environment.</p>
+                </div>
+                <div class="sector">
+                    <h3>Industrial</h3>
+                    <p style="color: #000000;">The Industrial Sector provides goods and services used in construction, manufacturing and by the military. From industrial robots operated by AI to spacecraft that will make space travel a reality, the sector stands at the forefront
+                        of innovation.</p>
+                </div>
+                <div class="sector">
+                    <h3>TMT</h3>
+                    <p style="color: #000000;">TMT stands for technology, media and telecommunications and encompasses various big and exciting companies such as Apple and Amazon. Additionally, TMT was the best performing sector of 2017/8.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <section>
+
+        <div class="footer">
+
+            <div class="row">
+                <img src="../University_of_Edinburgh-Logo.wine.png" alt="blah">
+                <img src="../eutic_logo.png" alt="eutic-logo">
+            </div>
+
+            <div class="row">
+                <a href="https://www.facebook.com/EUTIC/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/eutic23_24/?ref=Laciex"><i class="fa fa-instagram"></i></a>
+                <a href="https://uk.linkedin.com/company/edinburgh-university-trading-and-investment-club"><i class="fa fa-linkedin"></i></a>
+                <!-- <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a> -->
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Committee</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="row">
+                EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha 
+                </div> -->
+
+
+
+
+
+        </div>
+
+
+
+
+    </section>
+    <footer>
+        EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha
+    </footer>
+</body>
+
+</html>
