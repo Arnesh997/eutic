@@ -32,6 +32,30 @@
             /* Adding a nice font */
         }
         
+        .curr-partner-boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            margin-top: -40px;
+            margin-bottom: 50px;
+            padding: 50px;
+            gap: 0px;
+            justify-content: center;
+        }
+        
+        .curr-partner-box {
+            margin-right: 0px;
+            /* Adjusted to remove the gap completely */
+            margin-bottom: 20px;
+        }
+        
+        .curr-partner-box img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+        
         .partner-boxes {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -144,7 +168,19 @@
     </header>
     <section>
         <div class="container-partner">
-            <h1>OUR PARTNERS</h1>
+            <h1>Current Partners</h1>
+        </div>
+        <div class="curr-partner-boxes">
+            <div class="curr-partner-box">
+                <img src="../partner_img/goldman.png" alt="Goldman Sachs">
+            </div>
+            <div class="curr-partner-box">
+                <img src="../partner_img/blmbg.png" alt="Bloomberg">
+            </div>
+        </div>
+
+        <div class="container-partner">
+            <h1>Past Sponsors</h1>
         </div>
 
         <div class="partner-boxes">
@@ -167,9 +203,6 @@
                 <img src="../partner_img/fini.png" alt="Partner 6">
             </div>
             <div class="partner-box">
-                <img src="../partner_img/goldman.png" alt="Partner 7">
-            </div>
-            <div class="partner-box">
                 <img src="../partner_img/moneymaze.jpeg" alt="Partner 8">
             </div>
             <div class="partner-box">
@@ -187,6 +220,7 @@
             <div class="partner-box">
                 <img src="../partner_img/theeconomist.png" alt="Partner 13">
             </div>
+
         </div>
     </section>
 
