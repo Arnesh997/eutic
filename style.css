@@ -1326,8 +1326,80 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 } */
 
+
+/*Adding the following buttons only for welcome week activities*/
+
+
+/*Welcome Week Header*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#welc-week-h1 {
+    color: white;
+    /* Changed text color to white */
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Softened the text shadow */
+    background-color: rgba(251, 230, 140, 0.6);
+    animation: fadeIn 2s;
+    /* Changed animation to a simple fade-in effect */
+}
+
+
+/*Welcome Week Buttons*/
+
+.welc-week-buttons {
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.welc-blob-btn {
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    position: relative;
+    padding: 10px 33px;
+    /* Adjusted padding to make the button smaller */
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(222, 174, 41);
+    font-size: 18px;
+    /* Adjusted font size to make the button smaller */
+    font-weight: bolder;
+    background-color: white;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    /* Added border to create a boundary around the text */
+    transition: background-color 0.5s, color 0.5s;
+    /* Added transition for background-color */
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.welc-blob-btn:hover {
+    background-color: black;
+    /* Background turns black on hover */
+    color: white;
+    /* Text turns white on hover */
+}
+
+
+/*Welcome Week Buttons Fixed*/
+
+
+/****************************************/
+
 .buttons {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     border-radius: 30px;
 }
@@ -1336,7 +1408,7 @@ body {
     font-family: 'Oswald', sans-serif;
     z-index: 1;
     position: relative;
-    padding: 20px 46px;
+    padding: 20px 36px;
     margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
