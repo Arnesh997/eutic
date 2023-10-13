@@ -52,6 +52,9 @@ nav {
 
 /* Media query for screens 768px and below */
 
+/* Your existing styles go here */
+
+/* Styles for mobile devices */
 @media (max-width: 1080px) {
     .nav-links {
         display: none;
@@ -67,22 +70,48 @@ nav {
     .nav-links.active {
         display: flex;
     }
-    /* .menu-icon {
+    .menu-icon {
         display: block;
-        margin-left: 80px;
+        margin-right: 20px; /* Adjust margin as needed */
     }
-    .menu-icon.active {
-        color: rgb(233, 194, 23);
-    } */
     nav .logo-wrapper {
-        /* margin-left: -170px; Adjust the margin as needed */
+        align-items: left;
+        justify-content: left;
+        margin-left: -170px;
+        display: flex;
+        padding: 0;
+    }
+    nav ul li {
+        display: none;
+    }
+}
+
+
+/* @media (max-width: 1080px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav .logo-wrapper {
+        
         align-items: left;
         justify-content: left;
         margin-left: -170px;
         margin-right: 100px;
         display: flex;
         padding: 0;
-        /* margin-right: 100px; */
+        
     }
     nav ul li a {
         display: none;
@@ -92,7 +121,7 @@ nav {
 .nav-links {
     display: flex;
     color: tan;
-}
+} */
 
 
 /* to split the container into two blocks */
@@ -729,6 +758,7 @@ td {
 }
 
 
+
 /* HOME PAGE STYLES  */
 
 .index-header {
@@ -1038,6 +1068,9 @@ td {
     /* Adjust the flex-basis value to control the number of events per row */
     height: 500px;
     margin-bottom: 20px;
+
+
+    min-width: 300px;
     /* Rest of the styling for event boxes */
 }
 
@@ -1060,6 +1093,15 @@ td {
 
 .event-header h1 {
     font-weight: lighter;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .event-box {
+        flex-basis: 100%; /* Full width for each event box */
+        width: auto; /* Remove the fixed width */
+        max-width: 350px;
+    }
 }
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
@@ -1432,17 +1474,17 @@ body {
 }
 
 .blob-btn__blob:nth-child(2) {
-    left: 30%;
+    left: 25%;
     transition-delay: 0.08s;
 }
 
 .blob-btn__blob:nth-child(3) {
-    left: 60%;
+    left: 50%;
     transition-delay: 0.16s;
 }
 
 .blob-btn__blob:nth-child(4) {
-    left: 90%;
+    left: 75%;
     transition-delay: 0.24s;
 }
 

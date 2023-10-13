@@ -32,87 +32,87 @@ const events = [
 
 
 
-// Get elements
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const nowBtn = document.getElementById('nowBtn');
-const monthYearElement = document.getElementById('monthYear');
-const calendarBody = document.getElementById('calendarBody');
+// // Get elements
+// const prevBtn = document.getElementById('prevBtn');
+// const nextBtn = document.getElementById('nextBtn');
+// const nowBtn = document.getElementById('nowBtn');
+// const monthYearElement = document.getElementById('monthYear');
+// const calendarBody = document.getElementById('calendarBody');
 
-// Event listeners for previous, next, and now buttons
-prevBtn.addEventListener('click', showPreviousMonth);
-nextBtn.addEventListener('click', showNextMonth);
-nowBtn.addEventListener('click', showCurrentMonth);
+// // Event listeners for previous, next, and now buttons
+// prevBtn.addEventListener('click', showPreviousMonth);
+// nextBtn.addEventListener('click', showNextMonth);
+// nowBtn.addEventListener('click', showCurrentMonth);
 
-// Initial date
-let currentDate = new Date();
+// // Initial date
+// let currentDate = new Date();
 
-// Function to display previous month
-function showPreviousMonth() {
-  currentDate.setMonth(currentDate.getMonth() - 1);
-  displayCalendar();
-}
+// // Function to display previous month
+// function showPreviousMonth() {
+//   currentDate.setMonth(currentDate.getMonth() - 1);
+//   displayCalendar();
+// }
 
-// Function to display next month
-function showNextMonth() {
-  currentDate.setMonth(currentDate.getMonth() + 1);
-  displayCalendar();
-}
+// // Function to display next month
+// function showNextMonth() {
+//   currentDate.setMonth(currentDate.getMonth() + 1);
+//   displayCalendar();
+// }
 
-// Function to display current month
-function showCurrentMonth() {
-  currentDate = new Date();
-  displayCalendar();
-}
+// // Function to display current month
+// function showCurrentMonth() {
+//   currentDate = new Date();
+//   displayCalendar();
+// }
 
-// Function to display the calendar
-function displayCalendar() {
-  // Clear the calendar body
-  calendarBody.innerHTML = '';
+// // Function to display the calendar
+// function displayCalendar() {
+//   // Clear the calendar body
+//   calendarBody.innerHTML = '';
 
-  // Set the month and year in the header
-  const month = currentDate.toLocaleString('default', { month: 'long' });
-  const year = currentDate.getFullYear();
-  monthYearElement.textContent = `${month} ${year}`;
+//   // Set the month and year in the header
+//   const month = currentDate.toLocaleString('default', { month: 'long' });
+//   const year = currentDate.getFullYear();
+//   monthYearElement.textContent = `${month} ${year}`;
 
-  // Get the number of days in the month
-  const daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+//   // Get the number of days in the month
+//   const daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
 
-  // Get the day of the week of the first day in the month
-  const firstDayOfWeek = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+//   // Get the day of the week of the first day in the month
+//   const firstDayOfWeek = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
 
-  // Generate the calendar
-  let dayCounter = 1;
-  for (let i = 0; i < 6; i++) {
-    const row = document.createElement('tr');
-    for (let j = 0; j < 7; j++) {
-      if ((i === 0 && j < firstDayOfWeek) || dayCounter > daysInMonth) {
-        const cell = document.createElement('td');
-        row.appendChild(cell);
-      } else {
-        const cell = document.createElement('td');
-        cell.textContent = dayCounter;
+//   // Generate the calendar
+//   let dayCounter = 1;
+//   for (let i = 0; i < 6; i++) {
+//     const row = document.createElement('tr');
+//     for (let j = 0; j < 7; j++) {
+//       if ((i === 0 && j < firstDayOfWeek) || dayCounter > daysInMonth) {
+//         const cell = document.createElement('td');
+//         row.appendChild(cell);
+//       } else {
+//         const cell = document.createElement('td');
+//         cell.textContent = dayCounter;
 
-        // Highlight current date
-        if (
-          currentDate.getFullYear() === new Date().getFullYear() &&
-          currentDate.getMonth() === new Date().getMonth() &&
-          dayCounter === new Date().getDate()
-        ) {
-          cell.classList.add('current-date');
-        }
+//         // Highlight current date
+//         if (
+//           currentDate.getFullYear() === new Date().getFullYear() &&
+//           currentDate.getMonth() === new Date().getMonth() &&
+//           dayCounter === new Date().getDate()
+//         ) {
+//           cell.classList.add('current-date');
+//         }
 
-        row.appendChild(cell);
-        dayCounter++;
-      }
-    }
-    calendarBody.appendChild(row);
-  }
-}
+//         row.appendChild(cell);
+//         dayCounter++;
+//       }
+//     }
+//     calendarBody.appendChild(row);
+//   }
+// }
 
 
-// Initial display of the calendar
-displayCalendar();
+// // Initial display of the calendar
+// displayCalendar();
 
 
 
@@ -235,6 +235,4 @@ window.addEventListener('load', startSlideshow);
 function redirectToLink(url) {
   window.location.href = "https://" + url;
 }
-
-
 
