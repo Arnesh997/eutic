@@ -68,7 +68,7 @@
         .right-half p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
-            color: #555;
+            color: #000000;
             line-height: 1.5;
             margin-bottom: 10px;
         }
@@ -98,9 +98,10 @@
         }
         
         .column {
-            flex: 0 0 calc(33.33% - 20px);
-            /* Adjust the width of the columns as needed */
-            margin: 10px;
+            flex: 0 0 calc(33.33% - 40px);
+            /* Updated to compensate for the added margin */
+            margin: 10px 20px;
+            /* Updated to add horizontal margin */
             text-align: center;
         }
         
@@ -117,6 +118,30 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .column {
+                flex: 0 0 calc(100% - 40px);
+                /* Full width columns for small screens */
+                margin: 10px 20px;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .column {
+                flex: 0 0 calc(50% - 40px);
+                /* Half width columns for medium screens */
+                margin: 10px 20px;
+            }
+        }
+        
+        @media (min-width: 1025px) {
+            .column {
+                flex: 0 0 calc(33.33% - 40px);
+                /* One third width columns for large screens */
+                margin: 10px 20px;
+            }
         }
     </style>
 </head>
