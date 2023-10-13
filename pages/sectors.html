@@ -45,7 +45,7 @@
         }
         
         .about-sectors p {
-            color: grey;
+            color: rgb(0, 0, 0);
             font-size: 20px;
             /* Makes the paragraph text grey */
         }
@@ -88,7 +88,7 @@
         
         .sectors-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
             /* adjust as needed */
             width: 100%;
@@ -98,23 +98,88 @@
         }
         
         .sector {
-            padding: 20px;
-            /* optional */
+            /* Styles specific to each sector */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* To center content vertically */
+            align-items: center;
+            /* To center content horizontally */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Optional: add a subtle shadow for a more elegant look */
+        }
+        
+        .sector p {
+            font-size: 20px;
+            /* Adjust based on your preference for readability */
+            line-height: 1.4;
             text-align: center;
-            /* This will center the text inside each sector */
-            border-radius: 10px;
-            /* optional */
+            margin: 5px 0;
+            /* Minimal spacing for elegance */
+            max-width: 80%;
+            max-height: fit-content;
+            /* Prevents the text from stretching too wide in each grid item */
         }
         
         .sector h3 {
             /* Styles for the sector heading... */
             text-align: center;
             color: #997714;
+            margin-bottom: 10px;
+            /* Provide a small gap between the heading and the description for better visual separation */
+        }
+        /* Responsive Design Adjustments */
+        
+        @media only screen and (max-width: 1200px) {
+            .sectors-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* Adjust columns for medium screens */
+                grid-gap: 15px;
+            }
         }
         
-        .sector p {
-            /* Styles for the sector description... */
-            font-size: 14px;
+        @media only screen and (max-width: 768px) {
+            .sectors-grid {
+                grid-template-columns: 1fr;
+                /* One column for small screens */
+                grid-gap: 15px;
+                padding: 0 20px;
+                /* Reduced padding */
+            }
+            .sector p,
+            .sector h3 {
+                margin: 15px;
+                /* Add some margin around text to prevent it from sticking to the borders */
+                font-size: 18px;
+                /* Reduce font size if needed */
+            }
+            .detail-sectors p {
+                font-size: 28px;
+                /* You might want to adjust this font size for smaller screens */
+                width: 80%;
+                /* Increase width percentage for smaller text size */
+            }
+            .about-sectors p {
+                font-size: 18px;
+                /* Adjusting paragraph size for smaller screens */
+            }
+            .about-sectors h1,
+            .detail-sectors p {
+                /* If you find the heading and paragraph sizes to be too large on smaller screens, adjust them here */
+                font-size: 24px;
+            }
+            /* You might want to adjust the slideshow-container and .mySlides if they do not scale well */
+            .slideshow-container {
+                height: 400px;
+            }
+            .mySlides {
+                /* Add potential adjustments for slide images */
+            }
+        }
+        /* You might add more media queries for even smaller screen sizes if needed, like so: */
+        
+        @media only screen and (max-width: 480px) {
+            /* Additional styles for screens smaller than 480px */
         }
     </style>
     <script>
@@ -137,10 +202,6 @@
             }
         }
     </script>
-
-
-
-
 
 </head>
 
