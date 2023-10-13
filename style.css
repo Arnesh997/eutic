@@ -1497,16 +1497,16 @@ body {
         transform: translateZ(0) scale(1.4);
     }
 }
-
+/* 
 .footer {
     background: white;
     padding: 30px 0px;
     font-family: 'Play', sans-serif;
     text-align: center;
     border: 6px solid rgb(222, 174, 41);
-    /* Border style, width, and color */
+    
     padding: 20px;
-    /* Add some padding inside the section */
+    
     border-bottom: none;
 }
 
@@ -1521,22 +1521,22 @@ body {
 }
 
 .footer .row img[src*="University_of_Edinburgh-Logo"] {
-    /* height: 60%; */
+    
     width: 450px;
     vertical-align: middle;
     margin-right: 250px;
     margin-top: 5px;
-    /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.8)); */
+    
 }
 
 .footer .row img[src*="eutic_logo.png"] {
-    /* height: 60%; */
+
     width: 200px;
-    ;
+    
     vertical-align: middle;
     margin-left: 30px;
     margin-top: 5px;
-    /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.8)); */
+    
 }
 
 .footer .row a {
@@ -1573,25 +1573,70 @@ footer {
     border-top: none;
 }
 
+ */
+ .footer {
+    background: white;
+    padding: 30px 0;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    border: 6px solid rgb(222, 174, 41);
+    border-bottom: none;
+}
 
-@media screen and (max-width: 720px) {
-    .footer {
-        text-align: center; /* Center text for mobile */
-        padding: 5%;
-    }
+.footer .row {
+    padding-top: 10px;
+    color: grey;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.footer .row img[src*="University_of_Edinburgh-Logo"] {
+    width: 100%;
+    max-width: 450px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.footer .row img[src*="eutic_logo.png"] {
+    width: 100%;
+    max-width: 200px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.footer .row a:hover {
+    color: rgb(219, 186, 40);
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0 20px; /* Adjust as needed */
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0 10px; /* Adjust as needed */
+}
+
+@media (max-width: 720px) {
     .footer .row ul li {
         display: block;
-        margin: 10px 0px;
-        text-align: center; /* Center list items horizontally */
-    }
-    .footer .row a i {
-        margin: 0% 3%;
-    }
-    footer {
-        text-align: center; /* Center text for mobile */
-        padding: 5%;
+        text-align: center;
+        margin: 10px 0;
     }
 }
+
 
 /* @media (max-width:720px) {
     .footer {
