@@ -873,7 +873,7 @@ td {
     }
 }
 
-.box {
+/* .box {
     background-color: rgb(8, 8, 8);
     color: #fff;
     border-radius: 5px;
@@ -887,9 +887,55 @@ td {
     align-items: center;
 
     font-family: 'Times New Roman', Times, serif;
+} */
+
+.box {
+    background-color: rgb(8, 8, 8);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    height: 300px; /* Change height to auto to accommodate variable content */
+    width: 330px;
+    display: flex;
+    flex-direction: column; /* Stack the heading and content vertically */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.box:hover {
+.box h2 {
+    font-size: 24px; /* Style the heading */
+    margin-bottom: 10px; /* Add space between heading and content */
+    color:rgb(222, 174, 41);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.box p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 0;
+    
+}
+
+
+
+.wrapper {
+    width: 600px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 350px);
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.box:hover p{
     color: rgb(222, 174, 41);
 }
 
@@ -898,7 +944,7 @@ td {
 
 }
 
-.wrapper {
+/* .wrapper {
     width: 600px;
     display: grid;
     grid-gap: 10px;
@@ -911,7 +957,7 @@ td {
     
     margin-top: 50px;
     padding-bottom: 50px;
-}
+} */
 
 @media (max-width: 768px) {
     .wrapper {
@@ -922,6 +968,9 @@ td {
         padding: 0 20px;
         
         padding-bottom: 40px;
+
+        
+        
     }
 }
 
@@ -950,6 +999,7 @@ td {
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
+        
         /* Change to a single column */
     }
 }
