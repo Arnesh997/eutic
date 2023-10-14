@@ -834,7 +834,7 @@ td {
 }
 
 .overview-index h1 {
-    font-size: 50px;
+    font-size: 30px;
     margin-left: 100px;
     margin-top: 60px;
     padding-top: 60px;
@@ -845,8 +845,10 @@ td {
 .overview-index p {
     margin-left: 100px;
     margin-top: 50px;
-    font-size: 50px;
-    padding-bottom: 50px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -896,7 +898,7 @@ td {
     border-radius: 5px;
     padding: 20px;
     font-weight: bold;
-    height: 300px; /* Change height to auto to accommodate variable content */
+    height: 350px; /* Change height to auto to accommodate variable content */
     width: 330px;
     display: flex;
     flex-direction: column; /* Stack the heading and content vertically */
