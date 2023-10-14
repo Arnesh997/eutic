@@ -839,6 +839,8 @@ td {
     margin-top: 60px;
     padding-top: 60px;
     color: rgb(222, 174, 41);
+    padding-right: 30px;
+    padding-left: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -904,7 +906,9 @@ td {
     flex-direction: column; /* Stack the heading and content vertically */
     justify-content: center;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     text-align: center;
 }
 
