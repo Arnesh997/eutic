@@ -852,7 +852,7 @@ td {
 
 @media (max-width: 768px) {
     .overview-index h1 {
-        font-size: 40px;
+        font-size: 30px;
         /* Decrease font size for smaller screens */
         margin-left: 20px;
         /* Adjust margin */
@@ -862,7 +862,7 @@ td {
         /* Adjust padding */
     }
     .overview-index p {
-        font-size: 35px;
+        font-size: 22px;
         /* Decrease font size for smaller screens */
         margin-left: 20px;
         /* Adjust margin */
