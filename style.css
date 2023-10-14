@@ -1334,7 +1334,7 @@ td {
         height: 200px; /* Adjust height for mobile */
     }
     #parallax-world-of-ugg h2 {
-        font-size: 24px; /* Reduce font size for better mobile readability */
+        font-size: 20px; /* Reduce font size for better mobile readability */
     }
 }
 
@@ -1345,7 +1345,7 @@ td {
         background-attachment: scroll; /* Remove fixed background attachment */
         background-size: cover; /* Ensure the image covers the section */
         background-position: center center; /* Center the image */
-        padding: 20px;
+        
     }
 }
 
