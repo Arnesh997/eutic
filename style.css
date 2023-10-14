@@ -52,9 +52,12 @@ nav {
 
 /* Media query for screens 768px and below */
 
+
 /* Your existing styles go here */
 
+
 /* Styles for mobile devices */
+
 @media (max-width: 1080px) {
     .nav-links {
         display: none;
@@ -72,7 +75,8 @@ nav {
     }
     .menu-icon {
         display: block;
-        margin-right: 20px; /* Adjust margin as needed */
+        margin-right: 20px;
+        /* Adjust margin as needed */
     }
     nav .logo-wrapper {
         align-items: left;
@@ -758,7 +762,6 @@ td {
 }
 
 
-
 /* HOME PAGE STYLES  */
 
 .index-header {
@@ -883,9 +886,7 @@ td {
     height: 300px;
     display: flex;
     justify-content: center;
-   
     align-items: center;
-
     font-family: 'Times New Roman', Times, serif;
 } */
 
@@ -941,7 +942,6 @@ td {
 
 .box:nth-child(even) {
     background-color: rgb(68, 67, 67);
-
 }
 
 /* .wrapper {
@@ -950,11 +950,8 @@ td {
     grid-gap: 10px;
     grid-template-columns: repeat(3, 350px);
     margin: 0 auto;
-    
     justify-content: center;
-    
     align-content: center;
-    
     margin-top: 50px;
     padding-bottom: 50px;
 } */
@@ -962,11 +959,8 @@ td {
 @media (max-width: 768px) {
     .wrapper {
         grid-template-columns: 1fr;
-        
         width: auto;
-        
         padding: 0 20px;
-        
         padding-bottom: 40px;
 
         
@@ -1118,8 +1112,6 @@ td {
     /* Adjust the flex-basis value to control the number of events per row */
     height: 500px;
     margin-bottom: 20px;
-
-
     min-width: 300px;
     /* Rest of the styling for event boxes */
 }
@@ -1145,11 +1137,15 @@ td {
     font-weight: lighter;
 }
 
+
 /* Media query for mobile devices */
+
 @media (max-width: 768px) {
     .event-box {
-        flex-basis: 100%; /* Full width for each event box */
-        width: auto; /* Remove the fixed width */
+        flex-basis: 100%;
+        /* Full width for each event box */
+        width: auto;
+        /* Remove the fixed width */
         max-width: 350px;
     }
 }
@@ -1373,18 +1369,22 @@ td {
 #parallax-world-of-ugg .parallax-one,
 #parallax-world-of-ugg .parallax-two,
 #parallax-world-of-ugg .parallax-three {
-    padding-top: 150px; /* Reduce padding for mobile */
-    padding-bottom: 150px; /* Reduce padding for mobile */
+    padding-top: 150px;
+    /* Reduce padding for mobile */
+    padding-bottom: 150px;
+    /* Reduce padding for mobile */
 }
 
 @media screen and (max-width: 767px) {
     #parallax-world-of-ugg .parallax-one,
     #parallax-world-of-ugg .parallax-two,
     #parallax-world-of-ugg .parallax-three {
-        height: 200px; /* Adjust height for mobile */
+        height: 200px;
+        /* Adjust height for mobile */
     }
     #parallax-world-of-ugg h2 {
-        font-size: 20px; /* Reduce font size for better mobile readability */
+        font-size: 20px;
+        /* Reduce font size for better mobile readability */
     }
 }
 
@@ -1392,16 +1392,19 @@ td {
     #parallax-world-of-ugg .parallax-one,
     #parallax-world-of-ugg .parallax-two,
     #parallax-world-of-ugg .parallax-three {
-        background-attachment: scroll; /* Remove fixed background attachment */
-        background-size: cover; /* Ensure the image covers the section */
-        background-position: center center; /* Center the image */
-        
+        background-attachment: scroll;
+        /* Remove fixed background attachment */
+        background-size: cover;
+        /* Ensure the image covers the section */
+        background-position: center center;
+        /* Center the image */
     }
 }
 
 
-
 /**************************/
+
+
 /* 
 @media screen and (max-width: 959px) and (min-width: 768px) {
     #parallax-world-of-ugg .block {
@@ -1435,11 +1438,6 @@ td {
         width: 290px;
     }
 } */
-
-
-
-
-
 
 
 /* *, *:before, *:after {
@@ -1582,6 +1580,8 @@ body {
         transform: translateZ(0) scale(1.4);
     }
 }
+
+
 /* 
 .footer {
     background: white;
@@ -1659,7 +1659,8 @@ footer {
 }
 
  */
- .footer {
+
+.footer {
     background: white;
     padding: 30px 0;
     font-family: 'Play', sans-serif;
@@ -1706,12 +1707,14 @@ footer {
 
 .footer .row ul li {
     display: inline-block;
-    margin: 0 20px; /* Adjust as needed */
+    margin: 0 20px;
+    /* Adjust as needed */
 }
 
 .footer .row a i {
     font-size: 2em;
-    margin: 0 10px; /* Adjust as needed */
+    margin: 0 10px;
+    /* Adjust as needed */
 }
 
 @media (max-width: 720px) {

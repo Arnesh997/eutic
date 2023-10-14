@@ -7,7 +7,7 @@
     <link rel="icon" href="eutic_logo.png" type="image/icon type">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+
 
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -67,17 +67,13 @@
 
 <body>
     <header>
-        
-       
-        
-
         <nav>
             <div class="logo-wrapper">
                 <a class="logo" href="index.html"><img src="logo.png" alt="eutic Logo">
-                    </a>
+                </a>
             </div>
 
-           
+
             <div class="menu-icon">&#9776;
             </div>
             <ul class="nav-links">
@@ -87,12 +83,9 @@
                 <li><a href="pages/sectors.html">Sectors</a></li>
                 <li><a href="pages/overview.html">Overview</a></li>
                 <li><a href="pages/weutic.html">WEUTIC</a></li>
-                
+
             </ul>
-
-
-
-        </nav> 
+        </nav>
 
 
         <!-- <div class="index-header">
@@ -314,6 +307,16 @@
    -->
 
     <script src="script.js "></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuIcon = document.querySelector('.menu-icon');
+            var navLinks = document.querySelector('.nav-links');
+
+            menuIcon.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
