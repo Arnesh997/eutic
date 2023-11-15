@@ -15,54 +15,6 @@
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <!-- <style>
-        /* Testimonial Section */
-        
-        .testimonial-section {
-            position: relative;
-            /* To position the testimonials on the image */
-            height: 300px;
-            /* Adjust as needed */
-        }
-        
-        .testimonial-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .testimonial {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            /* Adjust as needed */
-            display: none;
-            /* Hide by default */
-        }
-    </style> -->
-    <!-- <script>
-        let currentTestimonialIndex = 0;
-        let testimonials = document.querySelectorAll('.testimonial');
-
-        // Initial display
-        testimonials[currentTestimonialIndex].style.display = "block";
-
-        setInterval(() => {
-            testimonials[currentTestimonialIndex].style.display = "none";
-            currentTestimonialIndex++;
-
-            if (currentTestimonialIndex >= testimonials.length) {
-                currentTestimonialIndex = 0;
-            }
-
-            testimonials[currentTestimonialIndex].style.display = "block";
-        }, 5000); // change testimonial every 5 seconds
-    </script> -->
 </head>
 
 <body>
@@ -72,23 +24,35 @@
                 <a class="logo" href="index.html"><img src="logo.png" alt="eutic Logo">
                 </a>
             </div>
-
-
             <div class="menu-icon">&#9776;
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/events.html">Events</a></li>
-                <li><a href="pages/partners.html">Partners</a></li>
-                <li><a href="pages/sectors.html">Sectors</a></li>
                 <li><a href="pages/overview.html">Overview</a></li>
-                <li><a href="pages/weutic.html">WEUTIC</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li class="dropdown">
+                    <a href="pages/sectors.html">Sectors</a>
+                    <div class="dropdown-content">
+                        <a href="link_to_sector1.html">Sector 1</a>
+                        <a href="link_to_sector2.html">Sector 2</a>
+                        <!-- Add other sectors as needed -->
+                    </div>
+                </li>
 
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Teams</a>
+                    <div class="dropdown-content">
+                        <a href="pages/weutic.html">WEUTIC</a>
+                        <a href="link_to_team2.html">TRADING</a>
+                        <!-- Add other teams as needed -->
+                    </div>
+                </li>
+                <li><a href="pages/partners.html">Partners</a></li>
+                <li><a href="https://efcconference.com">EFC</a></li>
             </ul>
         </nav>
 
     </header>
-    <!-- <div class="join-us-section"><h2>Join Us</h2><p>Text here about joining the club.</p></div>-->
     <main>
         <div id="parallax-world-of-ugg">
             <section>
@@ -223,7 +187,7 @@
 
     </section>
     <footer>
-        EUTIC Copyright © 2023 EUTIC - All rights reserved
+        EUTIC Copyright © 2023 EUTIC - All rights reserved || Designed By: Arjandeep Singh Bawa and Arnesh Saha
     </footer>
 
     <script src="script.js "></script>
