@@ -1297,6 +1297,7 @@ td {
     padding: 60px;
     margin: 0 auto;
     text-align: center;
+    opacity: 1;
 }
 
 #parallax-world-of-ugg .title h1 {
@@ -1342,6 +1343,7 @@ td {
 #parallax-world-of-ugg .parallax-one {
     padding-top: 200px;
     padding-bottom: 200px;
+    opacity: 0.9;
     overflow: hidden;
     position: relative;
     height: 50vh;

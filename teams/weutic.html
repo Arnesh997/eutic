@@ -15,64 +15,49 @@
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .weutic-container,
-        .weutic-section,
-        .contact-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            background-color: #d2d5da;
-        }
-        
-        .weutic-container img,
-        .weutic-section img,
-        .contact-section img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .weutic-section h1,
-        .text-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #343a40;
-        }
-        
-        .weutic-section p,
-        .text-section p {
-            font-size: 1rem;
-            color: #6c757d;
-            margin-left: 0;
-        }
-        
-        @media (min-width: 768px) {
-            .nav-links,
-            .dropdown-menu {
-                flex-direction: row;
-            }
-            .weutic-container,
-            .weutic-section {
-                flex-direction: row;
-            }
-            .weutic-section h1,
-            .text-section h2 {
-                font-size: 2.5rem;
-            }
-            .weutic-section p,
-            .text-section p {
-                font-size: 1.25rem;
-            }
-            .contact-section {
-                flex-direction: row;
-            }
-        }
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        color: #333;
+        line-height: 1.6;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .weutic-content {
+        padding: 15px;
+        background: #ffffff;
+        margin-top: 20px;
+
+    }
+    .weutic-content p {
+        text-align: left;
+    }
+    .weutic-content h2{
+        text-align: center;
+    }
+    .weutic-content p {
+        font-size: 18px;
+    }
+    .weutic-content li {
+        font-size: 18px;
+        line-height: 2;
+        text-align: left;
+        margin-left: 300px;
+        align-items: center;
+    }
+    /* .weutic-content ul {
+        font-size: 18px;
+        line-height: 2;
+        text-align: center;
+    }
+     */
     </style>
 </head>
 
@@ -99,26 +84,31 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="weutic-container">
-            <div class="image-section">
-                <!-- Your image goes here --><img src="../WEUTIC.webp" alt="Your Image"></div>
-            <div class="text-section">
-                <!-- Your text goes here -->
-                <h2>Women in EUTIC</h2>
-                <p>Women in EUTIC aims to create a network for the female members by giving you the opportunity to collaborate with likeminded individuals at the University of Edinburgh</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="weutic-section">
-            <h1>Join us at Women in EUTIC to participate in:</h1>
-            <p>1) Discussions with inspiring female alumnus from the industry. </p>
-            <p>2) Career development tailored towards women. </p>
-            <p>3) Networking Events with other women</p>
-            <p>Take this opportunity to push forward with your goals to build your future in the financial industry.</p>
-        </div>
-    </section>
+    <div class="container">
+        <article class="weutic-content">
+            <h2>What we do</h2>
+            <p>
+                At Women in EUTIC (WEUTIC), we are dedicated to creating an inclusive and supportive environment for our female members. Our mission is to empower women in finance by offering resources, opportunities, and connections that help them excel within EUTIC and beyond.
+            </p>
+    
+            <h2>Our impact</h2>
+            <ol>
+                <li><strong>Empowering Female Leadership</strong></li>
+                <li><strong>Enhanced Career Opportunities</strong></li>
+                <li><strong>Building a Supportive Community</strong></li>
+            </ol>
+    
+            <p>
+                Through our initiatives, WEUTIC has successfully nurtured and inspired members to assume leadership positions within the club. By promoting women's representation in leadership roles, we're helping to create a more inclusive and diverse environment within the finance community.
+            </p>
+            <p>
+                Our workshops and networking events have had a tangible impact on our members' career trajectories. Many of our female EUTIC members have secured competitive internships and job placements in the finance industry, thanks to the resources and connections provided.
+            </p>
+            <p>
+                By fostering collaboration among other women societies and offering networking and social events, WEUTIC has created a strong support network for women pursuing careers in finance. This sense of community and solidarity empowers our members to navigate challenges and advance their careers with confidence.
+            </p>
+        </article>
+    </div>
     <!-- footer section -->
     <section>
 
